@@ -1,0 +1,26 @@
+@import url('./__title/table__title.css');
+
+.table {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+#sortable td {
+  border: 1px solid black;
+}
+
+#sortable.hide1 tr > *:nth-child(1) {
+  display: none;
+}
+
+#sortable.hide2 tr > *:nth-child(2) {
+  display: none;
+}
+
+#sortable.hide3 tr > *:nth-child(3) {
+  display: none;
+}
+
+#sortable.hide4 tr > *:nth-child(4) {
+  display: none;
+}

@@ -1,0 +1,12 @@
+@import url('./__about/user__about.css');
+@import url('./__name/user__name.css');
+
+.user {
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  background: #FFF;
+  border-radius: 16px 16px 16px 16px;
+  padding: 10px;
+  text-align: center;
+}

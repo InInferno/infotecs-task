@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infotecs Task">
+    <meta name="keywords" content="Разработчик JS">
+    <meta name="author" content="Vadim Ivanov">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.second.css %>">
+    <link rel="icon" href="<%=require('./images/favicon.png').default%>" type="image/png">
+    <title>Infotecs Task</title>
+  </head>
+  <body class="body">
+    <main class="page">
+      <!-- Хэдер -->
+      <header class="header">
+        <h1 class="header__title">Разработчик JS</h1>
+      </header>
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Second Page ></a>
+      </nav>
+      <section class="info">
+        <div class="buttons">
+          <button class="hideName">Toggle Name</button>
+          <button class="hideSurname">Toggle Surname</button>
+          <button class="hideAbout">Toggle About</button>
+          <button class="hideEye">Toggle Eye</button>
+        </div>
+        <table class="table" id='sortable'>
+          <thead>
+            <tr>
+              <th class="table__title">Name</th>
+              <th class="table__title">Surname</th>
+              <th class="table__title">About</th>
+              <th class="table__title">Eye Color</th>
+            </tr>
+          </thead>
+          <tbody class="users">
+          </tbody>
+        </table>
+        <form class="edit-form">
+          <input class="edit-input"/>
+          <button>Save</button>
+        </form>
+      </section>
+      <!-- Футер -->
+      <footer class="footer">
+        <p>Vadim Ivanov</p>
+      </footer>
+      <script src="<%= htmlWebpackPlugin.files.chunks.second.entry %>"></script>
+    </main>
+  </body>
+</html>

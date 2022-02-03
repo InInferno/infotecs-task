@@ -1,0 +1,6 @@
+.edit-form {
+  display: none;
+  max-width: 200px;
+  flex-direction: column;
+  margin: 20px auto;
+}
